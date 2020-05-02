@@ -6,7 +6,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 import static io.restassured.RestAssured.*;
-
+import static org.hamcrest.Matchers.equalTo;
 
 public class GetRequestStepDefinitions extends TestBase {
 
