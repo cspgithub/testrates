@@ -8,6 +8,7 @@ import cucumber.api.java.en.When;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
 
+//extending TestBase Class - essential function related to load properties,local date function etc...
 public class GetRequestStepDefinitions extends TestBase {
 
 	TestContextAPI testContext;
