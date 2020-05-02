@@ -1,7 +1,7 @@
 # Feature Definition Template
 
 Feature: Validate API’s are fit for purpose in the use of the exchange rate for financial reasons
-#comments
+
   Scenario: assert the succes status of the latest date data response
     Given Go rest API is up and running
     When I hit the api with get request and end point as "/latest"
@@ -25,8 +25,8 @@ Scenario: assert the succes status of the past conversion rates response
 
   Scenario: assert the correct response - content of the past conversion rates response
     Given Go rest API is up and running
-    When I hit the api with get request and end point as "/2010-01-12?base=USD"
-    Then base value should be "USD"
+    When I hit the api with get request and end point as "/2010-01-12?base=INR"
+    Then base value should be "INR"
 
   Scenario: assert the current date in response while passing future date
     Given Go rest API is up and running
