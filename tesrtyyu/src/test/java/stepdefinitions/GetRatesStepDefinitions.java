@@ -1,7 +1,14 @@
 package stepdefinitions;
 
-public class GetRatesStepDefinitions {
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import context.*;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
+public class GetRequestStepDefinitions extends TestBase {
+//comments
 	TestContextAPI testContext;
 
 	public GetRequestStepDefinitions(TestContextAPI testContext) {
@@ -48,6 +55,4 @@ public class GetRatesStepDefinitions {
 	
 	
 
-}
-	
 }
