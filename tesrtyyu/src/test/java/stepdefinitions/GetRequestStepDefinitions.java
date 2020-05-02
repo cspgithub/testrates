@@ -26,7 +26,7 @@ public class GetRequestStepDefinitions extends TestBase {
 	@When("I hit the api with get request and end point as {string}")
 	public void i_hit_the_api_with_get_request_and_end_point_as(String endPoint) {
 		//URL details will be printed in test report
-		testContext.scn.write("URL hit is s: "+ server+endPoint );
+		testContext.scn.write("URL hit is : "+ server+endPoint );
 		testContext.resp = testContext.req_spec.when().get(endPoint);
 		//Response details will be printed in test report
 		testContext.scn.write("Response of the request is: " + testContext.resp.asString() + "<br>");
