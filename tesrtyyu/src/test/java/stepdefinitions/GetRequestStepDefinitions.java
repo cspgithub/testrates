@@ -1,7 +1,5 @@
 package stepdefinitions;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 import context.*;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
