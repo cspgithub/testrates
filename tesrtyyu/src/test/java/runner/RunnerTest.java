@@ -9,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(
 		
-		features="classpath:features",
-		glue="stepdefs",
+		features="src/test/resources/features",
+		glue="stepdefinitions",
 		
 		plugin = {"pretty",
 				"html:target/html/",
