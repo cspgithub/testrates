@@ -1,11 +1,12 @@
 #Author: cspandey3000@gmail.com
+
 Feature: Regression - Success Status Code for Latest and Past Date
  ##### for latest date rates
   Scenario: To Verify the success status for Get the latest foreign exchange reference rates api URL(Provided in Test Data Column)
     Given Go rest API is up and running
     When I hit the api with get request and end point as "/latest"
     Then API returned the status code as 200
-
+ @smoke
   Scenario: To Verify the success status for Latest Foreign Exchange Rates with Symbols api URL(Provided in Test Data Column)
     Given Go rest API is up and running
     When I hit the api with get request and end point as "/latest?symbols=USD,GBP"

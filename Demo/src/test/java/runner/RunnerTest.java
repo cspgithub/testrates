@@ -11,7 +11,8 @@ import cucumber.api.junit.Cucumber;
 		
 		features="src/test/resources/features",
 		glue="stepdefinitions",
-		
+		tags={"@smoke"},
+        
 		plugin = {"pretty",
 				"html:target/html/",
 				"json:target/json/file.json"
